@@ -1,8 +1,13 @@
 nav {
-  font-family: "Bungee", cursive;
   height: 120px;
   background-color: #4056a1;
   color: #ffffff;
   padding: 0 1.5em 0 1.5em;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav span {
+  font-family: "Bungee", cursive;
 }
