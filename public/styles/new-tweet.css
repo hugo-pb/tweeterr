@@ -6,3 +6,15 @@
   border-bottom: rgb(101, 90, 90) dotted 0.5rem;
   padding-bottom: 1rem;
 }
+.btn {
+  background-color: #4056a1;
+  font-family: "Bungee", cursive;
+  color: #f1f0eb;
+  border-radius: 15px;
+}
+.btn:hover {
+  color: #4056a1;
+  font-family: "Bungee", cursive;
+  background-color: #f1f0eb;
+  cursor: pointer;
+}
