@@ -11,6 +11,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* start of gradient backgorund  */
   background: hsla(39, 73%, 49%, 1);
 
   background: linear-gradient(
@@ -32,4 +34,5 @@ header {
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D79922", endColorstr="#4056A1", GradientType=1 );
+  /*  end of gradient backgorund  */
 }
