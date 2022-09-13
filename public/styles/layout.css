@@ -32,14 +32,3 @@ body {
   background-color: #f4f1ec;
   text-align: center;
 }
-
-section article {
-  border: #545149 solid 1px;
-  margin-top: 2rem;
-}
-section article header img {
-  height: 6rem;
-}
-section article header {
-  color: black;
-}
