@@ -2,6 +2,7 @@ header {
   height: 520px;
   display: flex;
   justify-content: center;
+  color: white;
 }
 .profile {
   padding-top: 120px;
@@ -10,4 +11,25 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: hsla(39, 73%, 49%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(39, 73%, 49%, 1) 0%,
+    hsla(226, 43%, 44%, 1) 75%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(39, 73%, 49%, 1) 0%,
+    hsla(226, 43%, 44%, 1) 75%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(39, 73%, 49%, 1) 0%,
+    hsla(226, 43%, 44%, 1) 75%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D79922", endColorstr="#4056A1", GradientType=1 );
 }
