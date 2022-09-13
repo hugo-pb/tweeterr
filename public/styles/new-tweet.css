@@ -1,6 +1,10 @@
 .new-tweet {
   background-color: #f1f0eb;
   padding: 2rem;
+  border: #242528 solid 1px;
+  margin-top: 1rem;
+  -webkit-box-shadow: -3px 6px 13px 5px rgba(0, 0, 0, 0.63);
+  box-shadow: -3px 6px 13px 5px rgba(0, 0, 0, 0.63);
 }
 
 .btn {
@@ -30,6 +34,7 @@
 .textarea {
   resize: none;
   background-color: #f1f0eb;
-
   margin-left: 2rem;
+  width: 100%;
+  border: none;
 }
