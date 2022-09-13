@@ -1,0 +1,8 @@
+.new-tweet {
+  background-color: #f1f0eb;
+  padding: 2rem;
+}
+.tweet-title {
+  border-bottom: rgb(101, 90, 90) dotted 0.5rem;
+  padding-bottom: 1rem;
+}
