@@ -1,3 +1,5 @@
 $(document).ready(function () {
-  console.log("hey");
+  $("#tweet-text").on("input", function () {
+    console.log(this.length);
+  });
 });
