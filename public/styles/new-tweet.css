@@ -20,9 +20,7 @@
   cursor: pointer;
 }
 .upperform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
   border-bottom: rgb(101, 90, 90) solid 0.25rem;
 }
 .lowerform {
@@ -35,6 +33,6 @@
   resize: none;
   background-color: #f1f0eb;
   margin-left: 2rem;
-  width: 100%;
+  width: 90%;
   border: none;
 }
