@@ -32,10 +32,12 @@ section article:hover {
 }
 section article footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
-
   font-size: medium;
+}
+footer i {
+  padding: 10px;
 }
 footer i:hover {
   background-color: #4056a1;
@@ -48,4 +50,9 @@ article header p {
 }
 .red {
   color: red;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
 }
