@@ -63,4 +63,12 @@ $(() => {
     return $tweetContainer.append(data);
   };
   renderTweets(data);
+
+  $("#new-tweet").on("submit", function (e) {
+    e.preventDefault();
+    const data = $(this).serialize();
+    $.post("/tweets", data).then(() => {
+      console.log("this works!!");
+    });
+  });
 });
