@@ -24,10 +24,11 @@ section article header {
   border-bottom: rgb(101, 90, 90) solid 0.25rem;
   width: 90%;
   padding-bottom: 3rem;
+  text-align: left;
 }
 section article:hover {
-  -webkit-box-shadow: -3px 6px 13px 5px rgb(0 0 0 / 63%);
-  box-shadow: -3px 6px 13px 5px rgb(0 0 0 / 63%);
+  -webkit-box-shadow: -3px 6px 13px 5px #4056a1;
+  box-shadow: -3px 6px 13px 5px #4056a1;
 }
 section article footer {
   display: flex;
@@ -41,4 +42,7 @@ footer i:hover {
   color: antiquewhite;
   padding: 10px;
   border-radius: 50%;
+}
+article header p {
+  color: #4c5d98;
 }
