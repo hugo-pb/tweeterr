@@ -1,7 +1,9 @@
 $(document).ready(function () {
   $("#new-tweet").on("input", function () {
-    const num = $("#tweet-text").val().length;
-    let newcounter = 140 - num;
-    $("#counter").html(newcounter);
+    const textarea = $(".upperform").children("textarea");
+    const num = textarea.val().length;
+    const newcounter = 140 - num;
+    const counter = $(".lowerform").children("#counter");
+    counter.html(newcounter);
   });
 });
