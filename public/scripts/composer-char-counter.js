@@ -5,9 +5,9 @@ $(document).ready(function () {
     let newcounter = 140 - num;
     let counter = $(".lowerform").children("#counter");
     if (newcounter < 0) {
-      counter.text(newcounter).css("color", "red");
+      counter.text(newcounter).addClass("red");
     } else {
-      counter.text(newcounter).css("color", "black");
+      counter.text(newcounter).removeClass("red");
     }
   });
 });
