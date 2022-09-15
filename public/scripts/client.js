@@ -93,7 +93,7 @@ $(() => {
     if ($("#formContainer").is(":hidden")) {
       $("#formContainer").slideDown("slow");
     } else {
-      $("#formContainer").hide();
+      $("#formContainer").slideUp("slow").hide();
     }
   });
 });

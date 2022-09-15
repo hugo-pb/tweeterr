@@ -20,6 +20,8 @@ nav span {
 }
 .writeanewtweet i {
   animation: jumpInfinite 1.5s infinite;
+  position: absolute;
+  top: 84px;
 }
 .writeanewtweet:hover {
   border: #ffffff solid 1px;
