@@ -88,4 +88,12 @@ $(() => {
       loadTweets();
     });
   });
+
+  $("#showform").on("click", () => {
+    if ($("#formContainer").is(":hidden")) {
+      $("#formContainer").slideDown("slow");
+    } else {
+      $("#formContainer").hide();
+    }
+  });
 });
