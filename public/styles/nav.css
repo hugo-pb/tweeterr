@@ -25,6 +25,8 @@ nav span {
   border: #ffffff solid 1px;
   border-radius: 25px;
 }
+
+/* ~~~~~~~~~ animations ~~~~~~~~~~~~~~~~~~ */
 @keyframes jumpInfinite {
   0% {
     margin-top: 0;
