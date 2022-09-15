@@ -42,7 +42,7 @@ $(() => {
         </header>
         <p class="content">${data.content.text}</p>
       <footer>
-        <p>${data.created_at}</p>
+        <p>${timeago.format(data.created_at)}</p>
         <div class="icons">
           <i class="fa-regular fa-heart"></i>
           <i class="fa-regular fa-flag"></i>
@@ -53,22 +53,25 @@ $(() => {
   };
   const $tweetContainer = $("#tweetContainer");
   const renderTweets = function (tweets) {
-    let data = "";
-    // loops through tweets
+    $tweetContainer.empty();
     for (const tweet of tweets) {
-      // calls createTweetElement for each tweet
-      data += createTweetElement(tweet);
+      $tweetContainer.prepend(createTweetElement(tweet));
     }
-    // takes return value and appends it to the tweets container
-    return $tweetContainer.append(data);
   };
-  renderTweets(data);
+
+  const loadTweets = () => {
+    $.get("/tweets", data).then((data) => {
+      renderTweets(data);
+    });
+  };
+
+  loadTweets();
 
   $("#new-tweet").on("submit", function (e) {
     e.preventDefault();
     const data = $(this).serialize();
     $.post("/tweets", data).then(() => {
-      console.log("this works!!");
+      loadTweets();
     });
   });
 });
