@@ -31,16 +31,21 @@ $(() => {
   ];
 
   const createTweetElement = (data) => {
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
     return `
       <article>
         <header>
           <div class="author">
-          <img src='${data.user.avatars}' />
-          <h4>${data.user.name}</h4>
+          <img src='${escape(data.user.avatars)}' />
+          <h4>${escape(data.user.name)}</h4>
         </div>
-        <p>${data.user.handle}</p>
+        <p>${escape(data.user.handle)}</p>
         </header>
-        <p class="content">${data.content.text}</p>
+        <p class="content">${escape(data.content.text)}</p>
       <footer>
         <p>${timeago.format(data.created_at)}</p>
         <div class="icons">
@@ -70,10 +75,14 @@ $(() => {
   $("#new-tweet").on("submit", function (e) {
     e.preventDefault();
     const data = $(this).serialize();
-    if (data.length === 5) {
+    const counter = Number($("#counter").val());
+
+    if (counter === 140 || counter < 0) {
       return alert("something went wrong please check you tweet");
     }
     $.post("/tweets", data).then(() => {
+      $("#tweet-text").val("");
+      $("#counter").text(140);
       loadTweets();
     });
   });
