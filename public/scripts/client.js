@@ -78,9 +78,11 @@ $(() => {
     const counter = Number($("#counter").val());
 
     if (counter === 140 || counter < 0) {
-      return alert("something went wrong please check you tweet");
+      $("#alert").slideDown("slow");
+      return;
     }
     $.post("/tweets", data).then(() => {
+      $("#alert").hide();
       $("#tweet-text").val("");
       $("#counter").text(140);
       loadTweets();

@@ -32,3 +32,11 @@ body {
   background-color: #f4f1ec;
   text-align: center;
 }
+#alert {
+  display: none;
+  text-align: center;
+  color: red;
+  border: red solid 1px;
+  margin: 10px;
+  border-radius: 25px;
+}
