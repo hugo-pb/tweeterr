@@ -12,3 +12,13 @@ nav {
 nav span {
   font-family: "Bungee", cursive;
 }
+.writeanewtweet {
+  background-color: #4056a1;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+}
+.writeanewtweet:hover {
+  border: #ffffff solid 1px;
+  border-radius: 25px;
+}
