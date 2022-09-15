@@ -22,7 +22,7 @@ section article header {
 }
 .content {
   border-bottom: rgb(101, 90, 90) solid 0.25rem;
-  width: 90%;
+  width: 100%;
   padding-bottom: 3rem;
   text-align: left;
   word-wrap: break-word;
@@ -33,7 +33,7 @@ section article:hover {
 }
 section article footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
   font-size: medium;
 }
