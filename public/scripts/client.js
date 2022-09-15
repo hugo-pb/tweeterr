@@ -70,6 +70,9 @@ $(() => {
   $("#new-tweet").on("submit", function (e) {
     e.preventDefault();
     const data = $(this).serialize();
+    if (data.length === 5) {
+      return alert("something went wrong please check you tweet");
+    }
     $.post("/tweets", data).then(() => {
       loadTweets();
     });
