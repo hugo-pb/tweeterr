@@ -25,6 +25,7 @@ section article header {
   width: 90%;
   padding-bottom: 3rem;
   text-align: left;
+  word-wrap: break-word;
 }
 section article:hover {
   -webkit-box-shadow: -3px 6px 13px 5px #4056a1;
