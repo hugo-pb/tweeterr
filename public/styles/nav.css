@@ -12,18 +12,18 @@ nav {
 nav span {
   font-family: "Bungee", cursive;
 }
-.writeanewtweet {
+.write-a-new-tweet {
   background-color: #4056a1;
   color: whitesmoke;
   cursor: pointer;
   border: none;
 }
-.writeanewtweet i {
+.write-a-new-tweet i {
   animation: jumpInfinite 1.5s infinite;
   position: absolute;
   top: 84px;
 }
-.writeanewtweet:hover {
+.write-a-new-tweet:hover {
   background-color: #d89822;
   border-radius: 25px;
 }
