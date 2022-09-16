@@ -61,7 +61,7 @@ header {
     justify-content: space-around;
   }
   .rigth {
-    padding-right: 5rem;
+    padding: 5rem;
     overflow: hidden;
   }
 
