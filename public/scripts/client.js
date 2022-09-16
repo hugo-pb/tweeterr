@@ -74,10 +74,10 @@ $(() => {
   });
 
   $("#button-write-a-new-tweet").on("click", () => {
-    if ($("#form-container").is(":hidden")) {
-      $("#form-container").slideDown("slow");
+    if ($("#form-contain").is(":hidden")) {
+      $("#form-contain").slideDown("slow");
     } else {
-      $("#form-container").slideUp("slow").hide();
+      $("#form-contain").slideUp("slow").hide();
     }
   });
 });

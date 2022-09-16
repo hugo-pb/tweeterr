@@ -58,6 +58,7 @@ header {
     display: flex;
     padding-top: 120px;
     background-color: transparent;
+    justify-content: space-around;
   }
   .rigth {
     padding-right: 5rem;
