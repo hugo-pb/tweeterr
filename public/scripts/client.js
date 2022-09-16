@@ -31,7 +31,7 @@ $(() => {
       </footer>
       </article>`;
   };
-  const $tweetContainer = $("#tweetContainer");
+  const $tweetContainer = $("#tweet-container");
   const renderTweets = function (tweets) {
     $tweetContainer.empty();
     for (const tweet of tweets) {
