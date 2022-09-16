@@ -42,3 +42,42 @@ body {
   border-radius: 25px;
   background-color: antiquewhite;
 }
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    display: flex;
+    padding-top: 120px;
+    background-color: transparent;
+    justify-content: space-around;
+  }
+  .rigth {
+    padding: 5rem;
+    overflow: hidden;
+  }
+
+  body {
+    /* start of gradient backgorund  */
+    background: hsla(39, 73%, 49%, 1);
+
+    background: linear-gradient(
+      90deg,
+      hsla(39, 73%, 49%, 1) 0%,
+      hsla(226, 43%, 44%, 1) 75%
+    );
+
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(39, 73%, 49%, 1) 0%,
+      hsla(226, 43%, 44%, 1) 75%
+    );
+
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(39, 73%, 49%, 1) 0%,
+      hsla(226, 43%, 44%, 1) 75%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D79922", endColorstr="#4056A1", GradientType=1 );
+    /*  end of gradient backgorund  */
+  }
+}
