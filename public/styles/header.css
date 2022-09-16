@@ -54,7 +54,7 @@ header {
     top: 4rem;
     padding-right: 5rem;
   }
-  .container {
+  .main-container {
     display: flex;
     padding-top: 120px;
     background-color: transparent;

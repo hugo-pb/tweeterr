@@ -89,7 +89,7 @@ $(() => {
     });
   });
 
-  $("#showform").on("click", () => {
+  $("#button-write-a-new-tweet").on("click", () => {
     if ($("#formContainer").is(":hidden")) {
       $("#formContainer").slideDown("slow");
     } else {
