@@ -24,7 +24,7 @@ nav span {
   top: 84px;
 }
 .writeanewtweet:hover {
-  border: #ffffff solid 1px;
+  background-color: #d89822;
   border-radius: 25px;
 }
 
