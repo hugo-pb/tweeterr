@@ -43,6 +43,7 @@ body {
   background-color: antiquewhite;
 }
 
+/* ~~~~~~~~~ responsive design ~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1200px) {
   .main-container {
     display: flex;
