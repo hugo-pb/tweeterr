@@ -34,3 +34,30 @@ header {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D79922", endColorstr="#4056A1", GradientType=1 );
   /*  end of gradient backgorund  */
 }
+.profile-pc {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .profile {
+    display: none;
+  }
+  .profile-pc {
+    height: 520px;
+    padding-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 4rem;
+    padding-right: 5rem;
+  }
+  .container {
+    display: flex;
+    padding-top: 120px;
+  }
+  .rigth {
+    padding-right: 5rem;
+  }
+}

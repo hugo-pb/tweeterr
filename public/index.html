@@ -3,6 +3,10 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
     <!-- External CSS -->
     <link
@@ -74,21 +78,31 @@
       <p>🛑 something went wrong please check you tweet 🛑</p>
     </div>
     <main class="container">
-      <section class="new-tweet display" id="formContainer">
-        <h2 class="tweet-title">Compose Tweet</h2>
-        <form action="/tweets/" method="POST" id="new-tweet">
-          <div class="upperform">
-            <label for="tweet-text">What are you humming about?</label>
-            <textarea class="textarea" name="text" id="tweet-text"></textarea>
-          </div>
-          <div class="lowerform">
-            <button class="btn" type="submit">Tweet</button>
-            <output name="counter" id="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-
-      <section id="tweetContainer"></section>
+      <div class="profile-pc">
+        <div>
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div>
+          <h2>Hugo Palomera</h2>
+        </div>
+      </div>
+      <div class="rigth">
+        <section class="new-tweet display" id="formContainer">
+          <h2 class="tweet-title">Compose Tweet</h2>
+          <form action="/tweets/" method="POST" id="new-tweet">
+            <div class="upperform">
+              <label for="tweet-text">What are you humming about?</label>
+              <textarea class="textarea" name="text" id="tweet-text"></textarea>
+            </div>
+            <div class="lowerform">
+              <button class="btn" type="submit">Tweet</button>
+              <output name="counter" id="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section id="tweetContainer"></section>
+      </div>
     </main>
   </body>
 </html>
