@@ -6,6 +6,7 @@
 
 $(() => {
   const createTweetElement = (data) => {
+    //// security for hackers on text area  ////
     const escape = function (str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
@@ -31,7 +32,9 @@ $(() => {
       </footer>
       </article>`;
   };
+
   const $tweetContainer = $("#tweet-container");
+
   const renderTweets = function (tweets) {
     $tweetContainer.empty();
     for (const tweet of tweets) {
@@ -39,11 +42,6 @@ $(() => {
     }
   };
 
-  // const loadTweets = () => {
-  //   $.get("/tweets", data).then(() => {
-  //     renderTweets(data);
-  //   });
-  // };
   const loadTweets = () => {
     $.ajax({
       type: "GET",
@@ -56,6 +54,7 @@ $(() => {
 
   loadTweets();
 
+  //// New tweets added to the database  ////
   $("#new-tweet").on("submit", function (e) {
     e.preventDefault();
     const data = $(this).serialize();
@@ -73,6 +72,7 @@ $(() => {
     });
   });
 
+  //// toggle form ////
   $("#button-write-a-new-tweet").on("click", () => {
     if ($("#form-contain").is(":hidden")) {
       $("#form-contain").slideDown("slow");
