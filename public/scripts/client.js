@@ -90,10 +90,10 @@ $(() => {
   });
 
   $("#button-write-a-new-tweet").on("click", () => {
-    if ($("#formContainer").is(":hidden")) {
-      $("#formContainer").slideDown("slow");
+    if ($("#form-container").is(":hidden")) {
+      $("#form-container").slideDown("slow");
     } else {
-      $("#formContainer").slideUp("slow").hide();
+      $("#form-container").slideUp("slow").hide();
     }
   });
 });
